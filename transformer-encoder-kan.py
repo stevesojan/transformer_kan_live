@@ -7,6 +7,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import torch
@@ -503,6 +504,19 @@ def regression_metrics(y_true: np.ndarray, y_pred: np.ndarray) -> Dict[str, floa
     return {"mse": mse, "mae": mae, "rmse": rmse, "r2": r2}
 
 
+def plot_lr_history(lr_history: List[float], output_path: str) -> None:
+    epochs = np.arange(1, len(lr_history) + 1)
+    plt.figure(figsize=(8, 4.5))
+    plt.plot(epochs, lr_history, marker="o", linewidth=1.5, markersize=4)
+    plt.title("Learning Rate per Epoch (ReduceLROnPlateau)")
+    plt.xlabel("Epoch")
+    plt.ylabel("Learning Rate")
+    plt.grid(True, alpha=0.3)
+    plt.tight_layout()
+    plt.savefig(output_path, dpi=150)
+    plt.close()
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Train/Evaluate Transformer Encoder - KAN regressor on UCI Energy Efficiency."
@@ -512,12 +526,16 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--device", type=str, default="auto", choices=["auto", "cpu", "cuda"])
 
     parser.add_argument("--batch_size", type=int, default=32)
-    parser.add_argument("--epochs", type=int, default=50)
+    parser.add_argument("--epochs", type=int, default=55)
     parser.add_argument("--lr", type=float, default=3e-4)
     parser.add_argument("--weight_decay", type=float, default=0.01)
     parser.add_argument("--grad_clip", type=float, default=1.0)
     parser.add_argument("--loss_threshold", type=float, default=0.05)
     parser.add_argument("--log_every", type=int, default=10)
+    parser.add_argument("--lr_scheduler_factor", type=float, default=0.5)
+    parser.add_argument("--lr_scheduler_patience", type=int, default=10)
+    parser.add_argument("--lr_scheduler_min_lr", type=float, default=1e-6)
+    parser.add_argument("--lr_plot_path", type=str, default="transformer-encoder-kan-lr.png")
 
     # Match encoder configs from transformer_seqtoseq_kan.py
     parser.add_argument("--d_model", type=int, default=128)
@@ -601,6 +619,13 @@ def main() -> None:
     optimizer = torch.optim.AdamW(
         model.parameters(), lr=args.lr, weight_decay=args.weight_decay
     )
+    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
+        optimizer=optimizer,
+        mode="min",
+        factor=args.lr_scheduler_factor,
+        patience=args.lr_scheduler_patience,
+        min_lr=args.lr_scheduler_min_lr,
+    )
 
     best_val_loss = float("inf")
     best_val_epoch = -1
@@ -611,6 +636,7 @@ def main() -> None:
     val_losses: List[float] = []
     epoch_times: List[float] = []
     sample_rates: List[float] = []
+    lr_history: List[float] = []
 
     print("Starting training...")
     for epoch in range(1, args.epochs + 1):
@@ -626,11 +652,14 @@ def main() -> None:
         global_step = epoch_stats.global_step
 
         val_loss, _, _ = evaluate(model=model, loader=val_loader, device=device)
+        scheduler.step(val_loss)
+        current_lr = optimizer.param_groups[0]["lr"]
 
         train_losses.append(epoch_stats.loss)
         val_losses.append(val_loss)
         epoch_times.append(epoch_stats.epoch_time_sec)
         sample_rates.append(epoch_stats.samples_per_sec)
+        lr_history.append(current_lr)
 
         if val_loss < best_val_loss:
             best_val_loss = val_loss
@@ -642,6 +671,7 @@ def main() -> None:
             f"Epoch {epoch:03d}/{args.epochs} | "
             f"train_loss={epoch_stats.loss:.6f} | "
             f"val_loss={val_loss:.6f} | "
+            f"lr={current_lr:.7f} | "
             f"time={epoch_stats.epoch_time_sec:.2f}s | "
             f"samples/s={epoch_stats.samples_per_sec:.2f}"
         )
@@ -660,6 +690,7 @@ def main() -> None:
     flops_per_forward = 2 * total_params * 8
     flops_per_batch = flops_per_forward * args.batch_size
     threshold_step_str = str(threshold_step) if threshold_step is not None else "Not reached"
+    plot_lr_history(lr_history, args.lr_plot_path)
 
     print("\n=================================================")
     print("MODEL: Transformer Encoder - KAN (Tabular Regression)")
@@ -679,6 +710,7 @@ def main() -> None:
     print(f"Training Time Per Epoch: {float(np.mean(epoch_times)):.4f} sec")
     print(f"Samples per Second: {float(np.mean(sample_rates)):.4f}")
     print(f"Estimated FLOPs per Batch: {flops_per_batch:.4e}")
+    print(f"LR Plot Path: {args.lr_plot_path}")
     print("=================================================")
 
 

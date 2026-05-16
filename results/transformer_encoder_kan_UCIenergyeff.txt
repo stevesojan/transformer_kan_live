@@ -1,0 +1,255 @@
+C:\Users\Steve\miniconda3\python.exe C:\Users\Steve\OneDrive\Documents\transformer-decoder-kan\transformer-encoder-kan.py 
+Using device: cpu
+Loading UCI Energy Efficiency dataset...
+Split sizes | train=576 | val=38 | test=154
+Total parameters: 2,050,818
+Trainable parameters: 1,774,338
+Starting training...
+  step 0000/18 | loss=0.848087 | avg_step_time=0.724s
+  step 0010/18 | loss=0.577264 | avg_step_time=0.399s
+  step 0017/18 | loss=0.104668 | avg_step_time=0.366s
+Epoch 001/55 | train_loss=0.674686 | val_loss=0.216415 | lr=0.0003000 | time=6.59s | samples/s=87.39
+  step 0000/18 | loss=0.111161 | avg_step_time=0.315s
+  step 0010/18 | loss=0.147413 | avg_step_time=0.319s
+  step 0017/18 | loss=0.153061 | avg_step_time=0.317s
+Epoch 002/55 | train_loss=0.164475 | val_loss=0.180740 | lr=0.0003000 | time=5.71s | samples/s=100.80
+  step 0000/18 | loss=0.149683 | avg_step_time=0.317s
+  step 0010/18 | loss=0.154440 | avg_step_time=0.324s
+  step 0017/18 | loss=0.110281 | avg_step_time=0.323s
+Epoch 003/55 | train_loss=0.121442 | val_loss=0.152897 | lr=0.0003000 | time=5.81s | samples/s=99.20
+  step 0000/18 | loss=0.169028 | avg_step_time=0.321s
+  step 0010/18 | loss=0.114139 | avg_step_time=0.342s
+  step 0017/18 | loss=0.158252 | avg_step_time=0.377s
+Epoch 004/55 | train_loss=0.117054 | val_loss=0.149081 | lr=0.0003000 | time=6.79s | samples/s=84.88
+  step 0000/18 | loss=0.142639 | avg_step_time=0.440s
+  step 0010/18 | loss=0.071035 | avg_step_time=0.401s
+  step 0017/18 | loss=0.054077 | avg_step_time=0.397s
+Epoch 005/55 | train_loss=0.102574 | val_loss=0.110779 | lr=0.0003000 | time=7.14s | samples/s=80.66
+  step 0000/18 | loss=0.113331 | avg_step_time=0.404s
+  step 0010/18 | loss=0.046014 | avg_step_time=0.406s
+  step 0017/18 | loss=0.095241 | avg_step_time=0.405s
+Epoch 006/55 | train_loss=0.099456 | val_loss=0.151247 | lr=0.0003000 | time=7.30s | samples/s=78.91
+  step 0000/18 | loss=0.156606 | avg_step_time=0.396s
+  step 0010/18 | loss=0.062462 | avg_step_time=0.391s
+  step 0017/18 | loss=0.066386 | avg_step_time=0.390s
+Epoch 007/55 | train_loss=0.102391 | val_loss=0.100118 | lr=0.0003000 | time=7.03s | samples/s=81.98
+  step 0000/18 | loss=0.109147 | avg_step_time=0.436s
+  step 0010/18 | loss=0.072494 | avg_step_time=0.393s
+  step 0017/18 | loss=0.078739 | avg_step_time=0.393s
+Epoch 008/55 | train_loss=0.089999 | val_loss=0.105558 | lr=0.0003000 | time=7.08s | samples/s=81.41
+  step 0000/18 | loss=0.118069 | avg_step_time=0.412s
+  step 0010/18 | loss=0.093584 | avg_step_time=0.364s
+  step 0017/18 | loss=0.053821 | avg_step_time=0.348s
+Epoch 009/55 | train_loss=0.086516 | val_loss=0.100824 | lr=0.0003000 | time=6.27s | samples/s=91.90
+  step 0000/18 | loss=0.123489 | avg_step_time=0.378s
+  step 0010/18 | loss=0.102198 | avg_step_time=0.326s
+  step 0017/18 | loss=0.065996 | avg_step_time=0.329s
+Epoch 010/55 | train_loss=0.079231 | val_loss=0.083978 | lr=0.0003000 | time=5.92s | samples/s=97.36
+  step 0000/18 | loss=0.075813 | avg_step_time=0.335s
+  step 0010/18 | loss=0.045291 | avg_step_time=0.324s
+  step 0017/18 | loss=0.065454 | avg_step_time=0.322s
+Epoch 011/55 | train_loss=0.064414 | val_loss=0.067056 | lr=0.0003000 | time=5.79s | samples/s=99.43
+  step 0000/18 | loss=0.053296 | avg_step_time=0.326s
+  step 0010/18 | loss=0.034064 | avg_step_time=0.361s
+  step 0017/18 | loss=0.050290 | avg_step_time=0.373s
+Epoch 012/55 | train_loss=0.055007 | val_loss=0.047827 | lr=0.0003000 | time=6.71s | samples/s=85.81
+  step 0000/18 | loss=0.105158 | avg_step_time=0.393s
+  step 0010/18 | loss=0.027150 | avg_step_time=0.390s
+  step 0017/18 | loss=0.043609 | avg_step_time=0.391s
+Epoch 013/55 | train_loss=0.053307 | val_loss=0.067885 | lr=0.0003000 | time=7.03s | samples/s=81.88
+  step 0000/18 | loss=0.056885 | avg_step_time=0.420s
+  step 0010/18 | loss=0.041422 | avg_step_time=0.391s
+  step 0017/18 | loss=0.062387 | avg_step_time=0.395s
+Epoch 014/55 | train_loss=0.046529 | val_loss=0.040732 | lr=0.0003000 | time=7.12s | samples/s=80.93
+  step 0000/18 | loss=0.018990 | avg_step_time=0.389s
+  step 0010/18 | loss=0.038875 | avg_step_time=0.400s
+  step 0017/18 | loss=0.035721 | avg_step_time=0.400s
+Epoch 015/55 | train_loss=0.043888 | val_loss=0.041729 | lr=0.0003000 | time=7.21s | samples/s=79.90
+  step 0000/18 | loss=0.037363 | avg_step_time=0.398s
+  step 0010/18 | loss=0.042038 | avg_step_time=0.397s
+  step 0017/18 | loss=0.042072 | avg_step_time=0.407s
+Epoch 016/55 | train_loss=0.038384 | val_loss=0.033997 | lr=0.0003000 | time=7.32s | samples/s=78.64
+  step 0000/18 | loss=0.031630 | avg_step_time=0.485s
+  step 0010/18 | loss=0.036295 | avg_step_time=0.372s
+  step 0017/18 | loss=0.037152 | avg_step_time=0.370s
+Epoch 017/55 | train_loss=0.036456 | val_loss=0.034540 | lr=0.0003000 | time=6.66s | samples/s=86.49
+  step 0000/18 | loss=0.051533 | avg_step_time=0.370s
+  step 0010/18 | loss=0.024408 | avg_step_time=0.335s
+  step 0017/18 | loss=0.030809 | avg_step_time=0.331s
+Epoch 018/55 | train_loss=0.035399 | val_loss=0.032152 | lr=0.0003000 | time=5.95s | samples/s=96.80
+  step 0000/18 | loss=0.034228 | avg_step_time=0.324s
+  step 0010/18 | loss=0.032569 | avg_step_time=0.320s
+  step 0017/18 | loss=0.028338 | avg_step_time=0.321s
+Epoch 019/55 | train_loss=0.036575 | val_loss=0.031216 | lr=0.0003000 | time=5.78s | samples/s=99.64
+  step 0000/18 | loss=0.031090 | avg_step_time=0.322s
+  step 0010/18 | loss=0.030352 | avg_step_time=0.376s
+  step 0017/18 | loss=0.039627 | avg_step_time=0.381s
+Epoch 020/55 | train_loss=0.034424 | val_loss=0.033272 | lr=0.0003000 | time=6.86s | samples/s=83.92
+  step 0000/18 | loss=0.037780 | avg_step_time=0.395s
+  step 0010/18 | loss=0.025180 | avg_step_time=0.397s
+  step 0017/18 | loss=0.028169 | avg_step_time=0.405s
+Epoch 021/55 | train_loss=0.034407 | val_loss=0.043533 | lr=0.0003000 | time=7.29s | samples/s=79.06
+  step 0000/18 | loss=0.037590 | avg_step_time=0.397s
+  step 0010/18 | loss=0.043461 | avg_step_time=0.392s
+  step 0017/18 | loss=0.032394 | avg_step_time=0.392s
+Epoch 022/55 | train_loss=0.034349 | val_loss=0.029036 | lr=0.0003000 | time=7.06s | samples/s=81.54
+  step 0000/18 | loss=0.029656 | avg_step_time=0.398s
+  step 0010/18 | loss=0.034885 | avg_step_time=0.391s
+  step 0017/18 | loss=0.018970 | avg_step_time=0.391s
+Epoch 023/55 | train_loss=0.030048 | val_loss=0.030175 | lr=0.0003000 | time=7.04s | samples/s=81.78
+  step 0000/18 | loss=0.025484 | avg_step_time=0.408s
+  step 0010/18 | loss=0.019176 | avg_step_time=0.395s
+  step 0017/18 | loss=0.042214 | avg_step_time=0.394s
+Epoch 024/55 | train_loss=0.029009 | val_loss=0.029706 | lr=0.0003000 | time=7.10s | samples/s=81.16
+  step 0000/18 | loss=0.032262 | avg_step_time=0.393s
+  step 0010/18 | loss=0.024269 | avg_step_time=0.346s
+  step 0017/18 | loss=0.032359 | avg_step_time=0.334s
+Epoch 025/55 | train_loss=0.029589 | val_loss=0.029568 | lr=0.0003000 | time=6.02s | samples/s=95.72
+  step 0000/18 | loss=0.023291 | avg_step_time=0.321s
+  step 0010/18 | loss=0.029963 | avg_step_time=0.318s
+  step 0017/18 | loss=0.030203 | avg_step_time=0.318s
+Epoch 026/55 | train_loss=0.029408 | val_loss=0.035201 | lr=0.0003000 | time=5.73s | samples/s=100.50
+  step 0000/18 | loss=0.028827 | avg_step_time=0.321s
+  step 0010/18 | loss=0.030076 | avg_step_time=0.323s
+  step 0017/18 | loss=0.018842 | avg_step_time=0.321s
+Epoch 027/55 | train_loss=0.028305 | val_loss=0.023197 | lr=0.0003000 | time=5.78s | samples/s=99.63
+  step 0000/18 | loss=0.041113 | avg_step_time=0.321s
+  step 0010/18 | loss=0.026574 | avg_step_time=0.376s
+  step 0017/18 | loss=0.028496 | avg_step_time=0.383s
+Epoch 028/55 | train_loss=0.028679 | val_loss=0.030549 | lr=0.0003000 | time=6.90s | samples/s=83.53
+  step 0000/18 | loss=0.022224 | avg_step_time=0.428s
+  step 0010/18 | loss=0.032961 | avg_step_time=0.404s
+  step 0017/18 | loss=0.042796 | avg_step_time=0.398s
+Epoch 029/55 | train_loss=0.027587 | val_loss=0.036144 | lr=0.0003000 | time=7.16s | samples/s=80.44
+  step 0000/18 | loss=0.014724 | avg_step_time=0.432s
+  step 0010/18 | loss=0.032932 | avg_step_time=0.403s
+  step 0017/18 | loss=0.021013 | avg_step_time=0.400s
+Epoch 030/55 | train_loss=0.026104 | val_loss=0.030274 | lr=0.0003000 | time=7.20s | samples/s=79.95
+  step 0000/18 | loss=0.025973 | avg_step_time=0.391s
+  step 0010/18 | loss=0.031892 | avg_step_time=0.392s
+  step 0017/18 | loss=0.024811 | avg_step_time=0.395s
+Epoch 031/55 | train_loss=0.026223 | val_loss=0.023540 | lr=0.0003000 | time=7.11s | samples/s=81.03
+  step 0000/18 | loss=0.022324 | avg_step_time=0.417s
+  step 0010/18 | loss=0.028149 | avg_step_time=0.401s
+  step 0017/18 | loss=0.029780 | avg_step_time=0.406s
+Epoch 032/55 | train_loss=0.025276 | val_loss=0.027673 | lr=0.0003000 | time=7.32s | samples/s=78.73
+  step 0000/18 | loss=0.017875 | avg_step_time=0.370s
+  step 0010/18 | loss=0.020490 | avg_step_time=0.354s
+  step 0017/18 | loss=0.029157 | avg_step_time=0.353s
+Epoch 033/55 | train_loss=0.026389 | val_loss=0.028801 | lr=0.0003000 | time=6.35s | samples/s=90.77
+  step 0000/18 | loss=0.026542 | avg_step_time=0.353s
+  step 0010/18 | loss=0.036520 | avg_step_time=0.331s
+  step 0017/18 | loss=0.024108 | avg_step_time=0.326s
+Epoch 034/55 | train_loss=0.027307 | val_loss=0.036110 | lr=0.0003000 | time=5.87s | samples/s=98.17
+  step 0000/18 | loss=0.022748 | avg_step_time=0.317s
+  step 0010/18 | loss=0.026897 | avg_step_time=0.336s
+  step 0017/18 | loss=0.023543 | avg_step_time=0.342s
+Epoch 035/55 | train_loss=0.024947 | val_loss=0.023938 | lr=0.0003000 | time=6.15s | samples/s=93.64
+  step 0000/18 | loss=0.031858 | avg_step_time=0.411s
+  step 0010/18 | loss=0.021537 | avg_step_time=0.437s
+  step 0017/18 | loss=0.022066 | avg_step_time=0.418s
+Epoch 036/55 | train_loss=0.024884 | val_loss=0.033366 | lr=0.0003000 | time=7.53s | samples/s=76.54
+  step 0000/18 | loss=0.019009 | avg_step_time=0.391s
+  step 0010/18 | loss=0.029553 | avg_step_time=0.396s
+  step 0017/18 | loss=0.030312 | avg_step_time=0.392s
+Epoch 037/55 | train_loss=0.024198 | val_loss=0.022385 | lr=0.0003000 | time=7.06s | samples/s=81.58
+  step 0000/18 | loss=0.038571 | avg_step_time=0.395s
+  step 0010/18 | loss=0.029188 | avg_step_time=0.391s
+  step 0017/18 | loss=0.025024 | avg_step_time=0.391s
+Epoch 038/55 | train_loss=0.024788 | val_loss=0.027224 | lr=0.0003000 | time=7.05s | samples/s=81.76
+  step 0000/18 | loss=0.025211 | avg_step_time=0.393s
+  step 0010/18 | loss=0.019157 | avg_step_time=0.390s
+  step 0017/18 | loss=0.026622 | avg_step_time=0.391s
+Epoch 039/55 | train_loss=0.025380 | val_loss=0.026286 | lr=0.0003000 | time=7.03s | samples/s=81.91
+  step 0000/18 | loss=0.023694 | avg_step_time=0.392s
+  step 0010/18 | loss=0.023813 | avg_step_time=0.390s
+  step 0017/18 | loss=0.020943 | avg_step_time=0.373s
+Epoch 040/55 | train_loss=0.024181 | val_loss=0.025158 | lr=0.0003000 | time=6.71s | samples/s=85.81
+  step 0000/18 | loss=0.014244 | avg_step_time=0.328s
+  step 0010/18 | loss=0.020490 | avg_step_time=0.319s
+  step 0017/18 | loss=0.016398 | avg_step_time=0.318s
+Epoch 041/55 | train_loss=0.022861 | val_loss=0.024752 | lr=0.0003000 | time=5.73s | samples/s=100.49
+  step 0000/18 | loss=0.024142 | avg_step_time=0.349s
+  step 0010/18 | loss=0.028746 | avg_step_time=0.322s
+  step 0017/18 | loss=0.025256 | avg_step_time=0.321s
+Epoch 042/55 | train_loss=0.024158 | val_loss=0.025734 | lr=0.0003000 | time=5.78s | samples/s=99.71
+  step 0000/18 | loss=0.017855 | avg_step_time=0.322s
+  step 0010/18 | loss=0.020493 | avg_step_time=0.331s
+  step 0017/18 | loss=0.039594 | avg_step_time=0.343s
+Epoch 043/55 | train_loss=0.022411 | val_loss=0.024600 | lr=0.0003000 | time=6.17s | samples/s=93.29
+  step 0000/18 | loss=0.020699 | avg_step_time=0.400s
+  step 0010/18 | loss=0.022272 | avg_step_time=0.393s
+  step 0017/18 | loss=0.022328 | avg_step_time=0.393s
+Epoch 044/55 | train_loss=0.022992 | val_loss=0.023964 | lr=0.0003000 | time=7.08s | samples/s=81.38
+  step 0000/18 | loss=0.020325 | avg_step_time=0.402s
+  step 0010/18 | loss=0.026952 | avg_step_time=0.391s
+  step 0017/18 | loss=0.028819 | avg_step_time=0.391s
+Epoch 045/55 | train_loss=0.023320 | val_loss=0.023191 | lr=0.0003000 | time=7.05s | samples/s=81.76
+  step 0000/18 | loss=0.017315 | avg_step_time=0.389s
+  step 0010/18 | loss=0.019045 | avg_step_time=0.391s
+  step 0017/18 | loss=0.020103 | avg_step_time=0.390s
+Epoch 046/55 | train_loss=0.021222 | val_loss=0.030695 | lr=0.0003000 | time=7.01s | samples/s=82.14
+  step 0000/18 | loss=0.019878 | avg_step_time=0.393s
+  step 0010/18 | loss=0.029007 | avg_step_time=0.392s
+  step 0017/18 | loss=0.015777 | avg_step_time=0.390s
+Epoch 047/55 | train_loss=0.022187 | val_loss=0.023978 | lr=0.0003000 | time=7.02s | samples/s=82.06
+  step 0000/18 | loss=0.022339 | avg_step_time=0.393s
+  step 0010/18 | loss=0.021332 | avg_step_time=0.389s
+  step 0017/18 | loss=0.023137 | avg_step_time=0.373s
+Epoch 048/55 | train_loss=0.021416 | val_loss=0.026549 | lr=0.0001500 | time=6.72s | samples/s=85.76
+  step 0000/18 | loss=0.015395 | avg_step_time=0.323s
+  step 0010/18 | loss=0.027135 | avg_step_time=0.317s
+  step 0017/18 | loss=0.020538 | avg_step_time=0.326s
+Epoch 049/55 | train_loss=0.019963 | val_loss=0.025692 | lr=0.0001500 | time=5.86s | samples/s=98.27
+  step 0000/18 | loss=0.026874 | avg_step_time=0.317s
+  step 0010/18 | loss=0.018431 | avg_step_time=0.322s
+  step 0017/18 | loss=0.031215 | avg_step_time=0.321s
+Epoch 050/55 | train_loss=0.022498 | val_loss=0.021939 | lr=0.0001500 | time=5.78s | samples/s=99.70
+  step 0000/18 | loss=0.012963 | avg_step_time=0.353s
+  step 0010/18 | loss=0.018570 | avg_step_time=0.322s
+  step 0017/18 | loss=0.023073 | avg_step_time=0.335s
+Epoch 051/55 | train_loss=0.021828 | val_loss=0.024797 | lr=0.0001500 | time=6.02s | samples/s=95.65
+  step 0000/18 | loss=0.019007 | avg_step_time=0.438s
+  step 0010/18 | loss=0.016982 | avg_step_time=0.394s
+  step 0017/18 | loss=0.022922 | avg_step_time=0.391s
+Epoch 052/55 | train_loss=0.021286 | val_loss=0.024652 | lr=0.0001500 | time=7.05s | samples/s=81.76
+  step 0000/18 | loss=0.014925 | avg_step_time=0.392s
+  step 0010/18 | loss=0.010916 | avg_step_time=0.394s
+  step 0017/18 | loss=0.018693 | avg_step_time=0.392s
+Epoch 053/55 | train_loss=0.020173 | val_loss=0.025188 | lr=0.0001500 | time=7.06s | samples/s=81.55
+  step 0000/18 | loss=0.024157 | avg_step_time=0.393s
+  step 0010/18 | loss=0.021026 | avg_step_time=0.387s
+  step 0017/18 | loss=0.016365 | avg_step_time=0.405s
+Epoch 054/55 | train_loss=0.020786 | val_loss=0.022577 | lr=0.0001500 | time=7.28s | samples/s=79.07
+  step 0000/18 | loss=0.013137 | avg_step_time=0.393s
+  step 0010/18 | loss=0.017263 | avg_step_time=0.395s
+  step 0017/18 | loss=0.012415 | avg_step_time=0.392s
+Epoch 055/55 | train_loss=0.020855 | val_loss=0.023056 | lr=0.0001500 | time=7.05s | samples/s=81.67
+
+=================================================
+MODEL: Transformer Encoder - KAN (Tabular Regression)
+=================================================
+Total Parameters: 2,050,818
+Trainable Parameters: 1,774,338
+
+Final Training Loss (MSE, normalized): 0.020855
+Final Validation Loss (MSE, normalized): 0.023056
+Final Test Loss (MSE, normalized): 0.024793
+
+Test MSE (original scale): 2.190383
+Test MAE (original scale): 1.092381
+Test RMSE (original scale): 1.479994
+Test R2 (mean over targets): 0.977122
+
+Generalization Gap: -0.002201
+
+Best Validation Epoch: 50
+Loss Threshold Step: 216
+
+Training Time Per Epoch: 6.6577 sec
+Samples per Second: 87.1902
+Estimated FLOPs per Batch: 1.0500e+09
+LR Plot Path: transformer-encoder-kan-lr.png
+=================================================
+
+Process finished with exit code 0
